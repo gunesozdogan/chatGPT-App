@@ -1,11 +1,14 @@
-import Chat from '@/components/chat';
+import ChatSection from '@/components/Chat/Chat';
+import Circles from '@/components/Circles/Circles';
+import Hero from '@/components/Hero/Hero';
 
-const HomePage = () => {
+const MainPage = () => {
   return (
     <>
-      <Chat />
+      <Hero />
+      <Circles />
     </>
   );
 };
 
-export default HomePage;
+export default MainPage;

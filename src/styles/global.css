@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'SF Pro Display Regular';
+  src: url('../../public/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+}
+
+:root {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'SF Pro Display Regular', sans-serif;
+}

@@ -1,0 +1,11 @@
+$blue-helper-color: #b6fbff;
+$main-background-color: #020202;
+$main-font-color: #fff;
+
+@mixin flexbox($align: center, $justify: center, $direction: row, $gap: 1rem) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  gap: $gap;
+}
