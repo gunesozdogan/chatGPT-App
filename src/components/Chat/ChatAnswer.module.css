@@ -1,0 +1,25 @@
+.container {
+  background-color: #1a1a1a;
+  border-radius: 0.8rem;
+  padding: 2rem;
+}
+.container .upperContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+}
+.container .upperContainer span {
+  color: #b6fbff;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.container .text {
+  margin-top: -1rem;
+  color: #fff;
+  padding-left: 5.5rem;
+  padding-bottom: 1.9rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}

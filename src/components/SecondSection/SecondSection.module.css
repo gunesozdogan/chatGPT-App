@@ -45,6 +45,21 @@
   margin: 2rem 13.2rem;
   height: 74.8rem;
   overflow: hidden;
+  position: relative;
+}
+.lowerSection .back {
+  background-color: transparent;
+  color: #b6fbff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  position: absolute;
+  left: 10.5rem;
+  top: 3rem;
+  z-index: 9;
+  border: none;
 }
 
 .leftSide {

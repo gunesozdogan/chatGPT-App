@@ -1,0 +1,21 @@
+.container .upperContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+}
+.container .upperContainer span {
+  color: #fff;
+  opacity: 0.7;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+.container .text {
+  margin-top: -1rem;
+  color: #fff;
+  padding-left: 5.5rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 1.9rem;
+}

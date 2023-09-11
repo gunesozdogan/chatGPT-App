@@ -1,0 +1,23 @@
+@import '../../styles/variable.scss';
+
+.container {
+  .upperContainer {
+    @include flexbox(center, flex-start);
+
+    span {
+      color: #fff;
+      opacity: 0.7;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+  }
+
+  .text {
+    margin-top: -1rem;
+    color: #fff;
+    padding-left: 5.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 1.9rem;
+  }
+}

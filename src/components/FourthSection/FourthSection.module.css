@@ -59,6 +59,7 @@
   width: 15.1rem;
   height: 5.9rem;
   margin-top: 2.4rem;
+  cursor: pointer;
 }
 .lowerContainer .info {
   color: #fff;

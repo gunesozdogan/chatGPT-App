@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   font-family: 'SF Pro Display Regular', sans-serif;
+  box-sizing: border-box;
 }
 
 .second-section {
@@ -30,8 +31,11 @@
   padding: 0 13.2rem;
   background-color: $main-background-color;
   border-top: 1px solid #303030;
+  border-bottom: 1px solid #303030;
 }
 
 .fourth-section {
   padding-top: 12rem;
+  border-bottom: 1px solid #303030;
+  margin-bottom: 12rem;
 }
