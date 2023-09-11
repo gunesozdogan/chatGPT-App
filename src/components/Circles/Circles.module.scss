@@ -59,3 +59,9 @@
   width: 100%;
   background: linear-gradient(to bottom, #070707, #000);
 }
+
+@media (max-width: 450px) {
+  .container {
+    height: 40rem;
+  }
+}

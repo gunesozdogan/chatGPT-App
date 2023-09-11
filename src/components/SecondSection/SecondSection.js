@@ -4,12 +4,26 @@ import Hero from '../Hero/Hero';
 import Circles from '../Circles/Circles';
 import classes from './SecondSection.module.scss';
 import Reload from '../Reload/Reload';
+import { isMobile } from 'react-device-detect';
 
-const SecondSection = () => {
-  const { upperSection, lowerSection, leftSide, back } = classes;
+const SecondSection = ({ scroll }) => {
+  const { container, upperSection, lowerSection, leftSide, back } = classes;
 
   return (
-    <>
+    <div
+      className={container}
+      style={
+        !isMobile && scroll > 0
+          ? {
+              transform:
+                'rotate(' +
+                (-90 + scroll / 5 >= 0 ? 0 : -90 + scroll / 5) +
+                'deg)',
+              display: 'flex',
+            }
+          : {}
+      }
+    >
       <div className={upperSection}>
         <h2>
           Start chatting with <span>AI.</span>
@@ -46,23 +60,23 @@ const SecondSection = () => {
             <path
               d="M4.23929 10.0426H15.3759"
               stroke="#B6FBFF"
-              stroke-width="1.19321"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.19321"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M8.21665 6.06531L4.23929 10.0427"
               stroke="#B6FBFF"
-              stroke-width="1.19321"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.19321"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
             <path
               d="M8.21665 14.0201L4.23929 10.0427"
               stroke="#B6FBFF"
-              stroke-width="1.19321"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="1.19321"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             />
           </svg>
           Back
@@ -74,7 +88,7 @@ const SecondSection = () => {
         </div>
         <Chat />
       </div>
-    </>
+    </div>
   );
 };
 

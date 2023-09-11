@@ -1,5 +1,11 @@
 @import '../../styles/variable.scss';
 
+.container {
+  flex-direction: column;
+  position: relative;
+  background-color: $main-background-color;
+}
+
 .upperSection {
   @include flexbox(flex-start, center, column);
   background-color: $main-background-color;
@@ -88,4 +94,44 @@
 
 .leftSide > div:nth-child(2) {
   border-bottom-left-radius: 2rem;
+}
+
+@media (max-width: 450px) {
+  .container {
+    transform: unset;
+
+    .upperSection {
+      padding: 2rem;
+
+      h2 {
+        text-align: center;
+        font-size: 4.8rem;
+      }
+      p {
+        width: 100%;
+      }
+    }
+
+    .lowerSection {
+      margin: 0;
+      flex-direction: column;
+      height: unset;
+
+      .leftSide {
+        width: 100%;
+      }
+
+      .back {
+        left: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  .container {
+    transform: rotate(-90deg);
+    opacity: 1;
+    transition: transform 1.5s ease;
+  }
 }

@@ -8,6 +8,10 @@
   background-color: #020202;
 }
 
+body {
+  margin: 0px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -35,4 +39,14 @@
   padding-top: 12rem;
   border-bottom: 1px solid #303030;
   margin-bottom: 12rem;
+}
+
+@media (max-width: 450px) {
+  .third-section {
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+  .fourth-section {
+    padding-bottom: 6rem;
+  }
 }

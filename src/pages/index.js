@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Hero from '@/components/Hero/Hero';
 import Circles from '@/components/Circles/Circles';
 import Reload from '@/components/Reload/Reload';
@@ -6,6 +7,24 @@ import ThirdSection from '@/components/ThirdSection/ThirdSection';
 import FourthSection from '@/components/FourthSection/FourthSection';
 
 const MainPage = () => {
+  const [currentScroll, setCurrentScroll] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const handleScroll = () => {
+        if (window.scrollY > 1000) {
+          setCurrentScroll(window.scrollY);
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, [currentScroll]);
+
   return (
     <>
       <section className="first-section">
@@ -14,7 +33,7 @@ const MainPage = () => {
         <Circles />
       </section>
       <section className="second-section">
-        <SecondSection />
+        <SecondSection scroll={currentScroll} />
       </section>
       <section className="third-section">
         <ThirdSection />

@@ -1,3 +1,9 @@
+.container {
+  flex-direction: column;
+  position: relative;
+  background-color: #020202;
+}
+
 .upperSection {
   display: flex;
   align-items: flex-start;
@@ -86,4 +92,38 @@
 
 .leftSide > div:nth-child(2) {
   border-bottom-left-radius: 2rem;
+}
+
+@media (max-width: 450px) {
+  .container {
+    transform: unset;
+  }
+  .container .upperSection {
+    padding: 2rem;
+  }
+  .container .upperSection h2 {
+    text-align: center;
+    font-size: 4.8rem;
+  }
+  .container .upperSection p {
+    width: 100%;
+  }
+  .container .lowerSection {
+    margin: 0;
+    flex-direction: column;
+    height: unset;
+  }
+  .container .lowerSection .leftSide {
+    width: 100%;
+  }
+  .container .lowerSection .back {
+    left: 20px;
+  }
+}
+@media (min-width: 450px) {
+  .container {
+    transform: rotate(-90deg);
+    opacity: 1;
+    transition: transform 1.5s ease;
+  }
 }

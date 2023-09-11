@@ -126,3 +126,30 @@
   gap: 5rem;
   cursor: pointer;
 }
+
+@media (max-width: 450px) {
+  .uppperContainer h2 {
+    width: 100%;
+    font-size: 4.8rem;
+  }
+  .lowerContainer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .lowerContainer .info .itemContainer h4 {
+    font-size: 2rem;
+  }
+  .lowerContainer .items span {
+    font-size: 1.6rem;
+  }
+  .lowerContainer .links {
+    flex-direction: row;
+  }
+  .lowerContainer span {
+    font-size: 1.6rem;
+  }
+  .lowerContainer .contact button {
+    margin-bottom: 4rem;
+  }
+}
