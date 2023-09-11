@@ -3,6 +3,7 @@ import Circles from '@/components/Circles/Circles';
 import Reload from '@/components/Reload/Reload';
 import SecondSection from '@/components/SecondSection/SecondSection';
 import ThirdSection from '@/components/ThirdSection/ThirdSection';
+import FourthSection from '@/components/FourthSection/FourthSection';
 
 const MainPage = () => {
   return (
@@ -17,6 +18,9 @@ const MainPage = () => {
       </section>
       <section className="third-section">
         <ThirdSection />
+      </section>
+      <section className="fourth-section">
+        <FourthSection />
       </section>
     </>
   );

@@ -1,0 +1,127 @@
+.uppperContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10rem 0;
+}
+.uppperContainer h2 {
+  color: #fff;
+  font-family: SF Pro Display;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 84rem;
+}
+.uppperContainer h2 span {
+  color: #b6fbff;
+}
+.uppperContainer button {
+  margin-top: 6.5rem;
+  width: 21.4rem;
+  height: 5.8rem;
+  border-radius: 9.9rem;
+  background-color: #b6fbff;
+  font-weight: 600;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.lowerContainer {
+  margin-top: 8.3rem;
+  padding: 5.6rem 13.2rem;
+  border-top: 1px solid #303030;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.2rem;
+}
+.lowerContainer .contact {
+  flex: 1;
+}
+.lowerContainer .contact p {
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  text-align: left;
+  width: 90%;
+}
+.lowerContainer .contact button {
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4rem;
+  width: 15.1rem;
+  height: 5.9rem;
+  margin-top: 2.4rem;
+}
+.lowerContainer .info {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  flex: 1;
+}
+.lowerContainer .info .itemContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+.lowerContainer .info .itemContainer h4 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.lowerContainer .info .itemContainer .items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.lowerContainer .info .itemContainer .items span {
+  color: #b3b3b3;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  width: 100%;
+}
+.lowerContainer .reload,
+.lowerContainer .links {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+}
+.lowerContainer .reload p,
+.lowerContainer .reload span,
+.lowerContainer .links p,
+.lowerContainer .links span {
+  color: #fff;
+}
+.lowerContainer .reload {
+  font-size: 1.8rem;
+  padding-top: 8rem;
+}
+.lowerContainer .reload span {
+  color: #b6fbff;
+}
+.lowerContainer .links {
+  padding-top: 8rem;
+  font-weight: 500;
+  font-size: 2.4rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+  gap: 5rem;
+  cursor: pointer;
+}

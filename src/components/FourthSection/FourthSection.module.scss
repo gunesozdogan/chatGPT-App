@@ -1,0 +1,123 @@
+@import '../../styles/variable.scss';
+
+.uppperContainer {
+  @include flexbox(center, center, column);
+  padding: 10rem 0;
+
+  h2 {
+    color: #fff;
+    font-family: SF Pro Display;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 84rem;
+
+    span {
+      color: $blue-helper-color;
+    }
+  }
+
+  button {
+    margin-top: 6.5rem;
+    width: 21.4rem;
+    height: 5.8rem;
+    border-radius: 9.9rem;
+    background-color: $blue-helper-color;
+    font-weight: 600;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+}
+
+.lowerContainer {
+  margin-top: 8.3rem;
+  padding: 5.6rem 13.2rem;
+  border-top: 1px solid #303030;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.2rem;
+
+  .contact {
+    flex: 1;
+
+    p {
+      color: #fff;
+      font-size: 2.4rem;
+      font-weight: 400;
+      line-height: 3.6rem;
+      text-align: left;
+      width: 90%;
+    }
+
+    button {
+      background-color: transparent;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: 4rem;
+      width: 15.1rem;
+      height: 5.9rem;
+      margin-top: 2.4rem;
+    }
+  }
+
+  .info {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    flex: 1;
+
+    .itemContainer {
+      @include flexbox(flex-start, flex-start, column, 1.7rem);
+
+      h4 {
+        font-size: 2.4rem;
+        font-weight: 400;
+      }
+
+      .items {
+        @include flexbox(flex-start, flex-start, column);
+
+        span {
+          color: #b3b3b3;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .reload,
+  .links {
+    width: 100%;
+    @include flexbox(flex-start, flex-start, row);
+
+    p,
+    span {
+      color: #fff;
+    }
+  }
+
+  .reload {
+    font-size: 1.8rem;
+    padding-top: 8rem;
+
+    span {
+      color: $blue-helper-color;
+    }
+  }
+
+  .links {
+    padding-top: 8rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    @include flexbox(flex-start, flex-start);
+    gap: 5rem;
+    cursor: pointer;
+  }
+}

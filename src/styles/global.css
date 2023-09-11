@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'SF Pro Display Regular';
-  src: url('../../public/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+  font-family: "SF Pro Display Regular";
+  src: url("../../public/fonts/SF-Pro-Display-Regular.otf") format("opentype");
 }
 :root {
   font-size: 62.5%;
@@ -11,7 +11,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'SF Pro Display Regular', sans-serif;
+  font-family: "SF Pro Display Regular", sans-serif;
 }
 
 .second-section {
@@ -27,5 +27,8 @@
   padding: 0 13.2rem;
   background-color: #020202;
   border-top: 1px solid #303030;
-  border-bottom: 1px solid #303030;
+}
+
+.fourth-section {
+  padding-top: 12rem;
 }

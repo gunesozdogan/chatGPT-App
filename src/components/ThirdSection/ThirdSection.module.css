@@ -6,13 +6,13 @@
   gap: 1rem;
   border-right: 1px solid #303030;
   padding: 8rem 0;
-  flex: 2;
+  flex: 1;
 }
 .left h2 {
   color: #fff;
   font-weight: 700;
   font-size: 6.4rem;
-  width: 70%;
+  width: 90%;
   line-height: 6.7rem;
 }
 .left p {
@@ -22,7 +22,7 @@
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0.72px;
-  width: 48rem;
+  width: 90%;
 }
 .left button {
   margin-top: 3rem;
@@ -31,26 +31,27 @@
   width: 16.5rem;
   height: 5.6rem;
   border-radius: 4rem;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 .left div {
   background-color: #212121;
-  width: 47.6rem;
+  width: 80%;
   height: 56rem;
   border-radius: 2rem;
   margin-top: 8rem;
 }
 
 .right {
-  flex: 3;
+  flex: 1;
+  padding-left: 6rem;
 }
 .right .imageContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 70%;
   justify-items: flex-end;
-  padding-left: 8rem;
   gap: 2rem;
-  padding-top: 6rem;
 }
 .right .imageContainer p {
   margin-top: 1.6rem;
@@ -61,6 +62,4 @@
 }
 .right .imageContainer img {
   margin-top: 2rem;
-  width: 27.5rem;
-  height: 28rem;
 }
