@@ -5,6 +5,7 @@ import Reload from '@/components/Reload/Reload';
 import SecondSection from '@/components/SecondSection/SecondSection';
 import ThirdSection from '@/components/ThirdSection/ThirdSection';
 import FourthSection from '@/components/FourthSection/FourthSection';
+import Head from 'next/head';
 
 const MainPage = () => {
   const [currentScroll, setCurrentScroll] = useState(0);
@@ -27,6 +28,9 @@ const MainPage = () => {
 
   return (
     <>
+      <Head>
+        <title>Reload Frontend Case</title>
+      </Head>
       <section className="first-section">
         <Reload />
         <Hero />
