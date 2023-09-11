@@ -120,7 +120,7 @@
     left: 20px;
   }
 }
-@media (min-width: 450px) {
+@media (min-width: 1200px) {
   .container {
     transform: rotate(-90deg);
     opacity: 1;
