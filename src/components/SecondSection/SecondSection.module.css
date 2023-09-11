@@ -1,0 +1,72 @@
+.upperSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #020202;
+  color: #fff;
+  padding: 4rem 13.2rem;
+}
+.upperSection h2 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  margin-bottom: 3.5rem;
+}
+.upperSection h2 span {
+  color: #b6fbff;
+}
+.upperSection p {
+  font-size: 2rem;
+  opacity: 0.7;
+  width: 45rem;
+  line-height: 2.3rem;
+  margin-bottom: 4rem;
+}
+.upperSection button {
+  color: #b6fbff;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.upperSection button svg {
+  margin-left: 1rem;
+}
+
+.lowerSection {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1rem;
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  margin: 2rem 13.2rem;
+}
+
+.leftSide {
+  width: 45%;
+  filter: invert(0.07);
+}
+.leftSide .heroSecond {
+  font-size: 10rem;
+}
+.leftSide div h2 {
+  font-size: 3.8rem;
+}
+.leftSide div p {
+  margin-top: -2rem;
+  font-size: 1.591rem;
+}
+.leftSide div button {
+  display: none;
+}
+
+.leftSide > div:first-child {
+  border-top-left-radius: 2rem;
+}
+
+.leftSide > div:nth-child(2) {
+  border-bottom-left-radius: 2rem;
+}

@@ -1,6 +1,6 @@
 .container {
   background-color: #020202;
-  padding: 43px;
+  padding: 19.2rem 0 10rem;
   color: #fff;
   font-size: 18px;
   display: flex;
@@ -8,30 +8,34 @@
   justify-content: center;
   flex-direction: column;
   gap: 13.1rem;
-}
-.container .header {
-  font-size: 6.4rem;
-  font-weight: 700;
-}
-.container .header span {
-  margin-right: 1.5rem;
-}
-.container .lowerSection {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 3.2rem;
 }
-.container .lowerSection .text {
+.container h2 {
+  font-size: 6.4rem;
+  font-weight: 700;
+}
+.container h2 span {
+  margin-right: 1.5rem;
+}
+.container .text {
   opacity: 0.7;
   font-weight: 400;
-  font-size: 20px;
   letter-spacing: 0.72px;
-  width: 500px;
+  max-width: 500px;
+  width: 35%;
+  min-width: 200px;
   text-align: center;
+  line-height: 2.227rem;
 }
-.container .lowerSection .continueButton {
+.container p {
+  font-size: 2rem;
+}
+.container .continueButton {
   background-color: #fff;
   border-radius: 6rem;
   width: 24.3rem;
@@ -43,7 +47,9 @@
   margin-top: 3.2rem;
   cursor: pointer;
 }
-.container .upperSection span,
-.container .lowerSection span {
+.container button {
+  display: block;
+}
+.container span {
   color: #b6fbff;
 }

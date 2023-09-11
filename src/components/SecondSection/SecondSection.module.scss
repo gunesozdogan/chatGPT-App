@@ -1,0 +1,77 @@
+@import '../../styles/variable.scss';
+
+.upperSection {
+  @include flexbox(flex-start, center, column);
+  background-color: $main-background-color;
+  color: #fff;
+  padding: 4rem 13.2rem;
+
+  h2 {
+    font-size: 6.4rem;
+    font-weight: 700;
+    margin-bottom: 3.5rem;
+
+    span {
+      color: $blue-helper-color;
+    }
+  }
+
+  p {
+    font-size: 2rem;
+    opacity: 0.7;
+    width: 45rem;
+    line-height: 2.3rem;
+    margin-bottom: 4rem;
+  }
+
+  button {
+    color: $blue-helper-color;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    svg {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.lowerSection {
+  @include flexbox(flex-start, flex-start);
+  border: 1px solid #fff;
+  border-radius: 2rem;
+  margin: 2rem 13.2rem;
+}
+
+.leftSide {
+  width: 45%;
+  filter: invert(0.07);
+
+  .heroSecond {
+    font-size: 10rem;
+  }
+
+  div {
+    h2 {
+      font-size: 3.8rem;
+    }
+
+    p {
+      margin-top: -2rem;
+      font-size: 1.591rem;
+    }
+
+    button {
+      display: none;
+    }
+  }
+}
+
+.leftSide > div:first-child {
+  border-top-left-radius: 2rem;
+}
+
+.leftSide > div:nth-child(2) {
+  border-bottom-left-radius: 2rem;
+}

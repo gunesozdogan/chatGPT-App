@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import chatGPTClient from '../../../chatGPT';
 
-const ChatSection = () => {
+import classes from '../Chat/Chat.module.css';
+
+const Chat = () => {
+  const { container } = classes;
   const [input, setInput] = useState('');
   const [response, setResponse] = useState('');
   const [conversation, setConversation] = useState([]);
@@ -35,7 +38,7 @@ const ChatSection = () => {
   };
 
   return (
-    <div>
+    <div className={container}>
       <h1>Chat with ChatGPT</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" value={input} onChange={handleInputChange} />
@@ -48,4 +51,4 @@ const ChatSection = () => {
   );
 };
 
-export default ChatSection;
+export default Chat;
